@@ -19,3 +19,46 @@ main {
     background-size: cover;
 }
 
+.form-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.para-text, .form-inputs {
+    width: 60%;
+}
+
+.para-text {
+    margin: 20px 0;
+}
+
+.form-para-container, .form-submit-container, .form-container {
+    padding: 10px 30px;
+}
+
+.form-container {
+    border: 1px red solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title {
+    margin-bottom: 10px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.form-input {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+}
+
+.form-input input {
+    width: 80%;
+}
