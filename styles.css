@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Norse";
+    src: url(./fonts/Norse-Bold.otf);
+}
+
 * {
     font-family: 'DM Sans', Arial, Helvetica, sans-serif;
     font-size: 19px;
@@ -27,8 +32,44 @@ main {
     height: 100vh;
     background: url('/images/leaves.jpg');
     background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
+.logo-bg {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+}
+
+.logo-bg h1 {
+    font-family: "Norse";
+    font-size: 4rem;
+}
+
+.image-container img {
+    width: 5rem;
+}
+
+.image-container p {
+    margin-top: auto;
+}
+
+.image-container a {
+    color: white;
+}
+
+.image-container p, .image-container a {
+    font-size: 0.6rem;
+}
 
 /* right */
 
@@ -80,7 +121,7 @@ main {
     border: 1.2px solid #E5E7EB;
     border-radius: 3px;
     font-size: 0.8rem;
-    padding: 5px 8px;
+    padding: 3px 8px;
 }
 
 .form-input input[type="password"]:invalid {
@@ -104,7 +145,6 @@ main {
 .form-submit-container button {
     background-color: var(--green);
     color: white;
-    font-size: 0.7rem;
     padding: 10px 40px;
     border-radius: 5px;
     border: none;
@@ -112,7 +152,11 @@ main {
     margin: 20px 0;
 }
 
-.form-submit-container p, .form-submit-container a {
+.form-submit-container button:hover {
+    opacity: 0.9;
+}
+
+.form-submit-container button, .form-submit-container p, .form-submit-container a {
     font-size: 0.8rem;
 }
 
