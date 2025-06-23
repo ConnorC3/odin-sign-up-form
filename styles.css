@@ -23,7 +23,7 @@ main {
 /* left */
 
 .image-container {
-    width: 50vw;
+    width: 65vw;
     height: 100vh;
     background: url('/images/leaves.jpg');
     background-size: cover;
@@ -77,12 +77,28 @@ main {
 
 .form-input input {
     width: 80%;
+    border: 1.2px solid #E5E7EB;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    padding: 5px 8px;
+}
+
+.form-input input[type="password"]:invalid {
+    border-color: red;
+}
+
+.form-input input:focus {
+    outline: none;
+    border: 1.2px solid #3b65dc;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .form-input label {
     font-size: 0.7rem;
     text-transform: uppercase;
     color: #5b626c;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .form-submit-container button {
@@ -102,4 +118,9 @@ main {
 
 .form-submit-container a {
     color: var(--green);
+    text-decoration: none;
+}
+
+.form-submit-container button, .form-submit-container a {
+    font-weight: bold;
 }
