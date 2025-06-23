@@ -30,7 +30,7 @@ main {
 .image-container {
     width: 65vw;
     height: 100vh;
-    background: url('/images/leaves.jpg');
+    background: url('./images/leaves.jpg');
     background-size: cover;
     color: white;
     display: flex;
